@@ -86,12 +86,12 @@ def pythagoras_tree(ax, square: np.ndarray, depth: int, alpha: float):
 
 def main():
     try:
-        depth = int(input("Вкажіть рівень рекурсії (наприклад 1..12): ").strip())
+        depth = int(input("Вкажіть рівень рекурсії: ").strip())         # <- Вказуємо рівень рекурсії!!!! (норма від 1 до 12)
     except ValueError:
         depth = 10
 
     try:
-        angle_deg = float(input("Вкажіть кут розгалуження в градусах (типово 45): ").strip() or "45")
+        angle_deg = float(input("Вкажіть кут розгалуження в градусах: ").strip() or "45")     # 45' - оптимальний кут який я знайшов у прикладах Фрактала Піфагора
     except ValueError:
         angle_deg = 45.0
 
